@@ -7,6 +7,9 @@
     "category": "Manufacturing",
     "version": "1.0",
     "license": "GPL-3",
-    "depends": ["mrp"],
+    "depends": ["base", "mrp"],
+    "data": [
+        "views/res_config_settings.xml",
+    ],
     "application": True,
 }
