@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <odoo>
     <record id="res_config_settings_view_form" model="ir.ui.view">
         <field name="name">res.config.settings.view.form.inherit.mqtt</field>
@@ -14,6 +13,7 @@
                         <setting id="mqtt_port" help="The port of the API server" documentation="https://github.com/Ism1tha/odoo-mqtt-api">
                             <field name="mqtt_api_port" string="Port"/>
                         </setting>
+                        <button name="action_open_mqtt_device_list" type="object" string="Manage Devices"/>
                     </block>
                 </app>
             </xpath>
