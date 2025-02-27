@@ -1,2 +1,5 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_mqtt_device,MQTT Device,model_mqtt_interface_device,base.group_user,1,1,1,1
+access_manufacturing_factory,access_manufacturing_factory,model_manufacturing_factory,,1,1,1,1
+access_manufacturing_warehouse,access_manufacturing_warehouse,model_manufacturing_warehouse,,1,1,1,1
+access_manufacturing_picking,access_manufacturing_picking,model_manufacturing_picking,,1,1,1,1
+access_manufacturing_robot,access_manufacturing_robot,model_manufacturing_robot,,1,1,1,1

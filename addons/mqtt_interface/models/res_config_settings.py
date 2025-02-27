@@ -17,12 +17,14 @@ class ResConfigSettings(models.TransientModel):
         help="The port number for connecting to the MQTT broker."
     )
 
-    def action_open_mqtt_device_list(self):
-        self.ensure_one()
+    def action_open_factory_form(self):
+        factory = self.env['manufacturing.factory'].search([], limit=1)
         return {
             'type': 'ir.actions.act_window',
-            'name': 'MQTT Devices',
-            'res_model': 'mqtt_interface.device',
-            'view_mode': 'tree,form',
+            'name': 'Factory',
+            'res_model': 'manufacturing.factory',
+            'res_id': factory.id,
+            'view_mode': 'form',
             'target': 'current',
         }
+
