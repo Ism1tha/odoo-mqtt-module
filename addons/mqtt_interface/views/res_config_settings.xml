@@ -13,7 +13,6 @@
                         <setting id="mqtt_port" help="The port of the API server" documentation="https://github.com/Ism1tha/odoo-mqtt-api">
                             <field name="mqtt_api_port" string="Port"/>
                         </setting>
-                        <button name="action_open_factory_form" string="Open Factory Form" type="object"/>
                     </block>
                 </app>
             </xpath>

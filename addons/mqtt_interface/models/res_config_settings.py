@@ -1,5 +1,4 @@
-from odoo import models, fields, api
-from odoo.exceptions import ValidationError
+from odoo import models, fields
 
 class ResConfigSettings(models.TransientModel):
     _inherit = 'res.config.settings'
@@ -16,15 +15,3 @@ class ResConfigSettings(models.TransientModel):
         default=1883,
         help="The port number for connecting to the MQTT broker."
     )
-
-    def action_open_factory_form(self):
-        factory = self.env['manufacturing.factory'].search([], limit=1)
-        return {
-            'type': 'ir.actions.act_window',
-            'name': 'Factory',
-            'res_model': 'manufacturing.factory',
-            'res_id': factory.id,
-            'view_mode': 'form',
-            'target': 'current',
-        }
-
