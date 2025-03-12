@@ -1,4 +1,4 @@
-from odoo import models, fields, api
+from odoo import models, fields
 
 class Robot(models.Model):
     _name = "mqtt_interface.robot"

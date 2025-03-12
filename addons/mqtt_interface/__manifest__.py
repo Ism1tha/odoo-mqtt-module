@@ -13,6 +13,7 @@
         "views/work_center_view.xml",
         "views/robot_view.xml",
         "views/res_config_settings.xml",
+        "views/product_template_view.xml",
     ],
     "application": True,
 }
