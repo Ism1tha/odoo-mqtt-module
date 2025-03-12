@@ -10,8 +10,9 @@
     "depends": ["base", "mrp"],
     "data": [
         "security/ir.model.access.csv",
+        "views/work_center_view.xml",
+        "views/robot_view.xml",
         "views/res_config_settings.xml",
-        "views/workcenter_views.xml",
     ],
     "application": True,
 }
